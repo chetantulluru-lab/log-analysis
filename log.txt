@@ -1,0 +1,15 @@
+Mar 29 10:01:02 server sshd[1021]: Failed password for root from 192.168.1.50 port 445 ssh2
+Mar 29 10:01:05 server sshd[1022]: Failed password for root from 192.168.1.50 port 446 ssh2
+Mar 29 10:01:08 server sshd[1023]: Failed password for admin from 192.168.1.50 port 447 ssh2
+Mar 29 10:02:10 server sshd[1024]: Accepted password for chetan from 10.0.0.2 port 450 ssh2
+Mar 29 10:03:11 server sudo: chetan : TTY=pts/0 ; COMMAND=/bin/apt update
+Mar 29 10:04:21 webserver apache: 172.16.0.5 GET /index.html 200
+Mar 29 10:04:25 webserver apache: 172.16.0.5 GET /admin 403
+Mar 29 10:04:27 webserver apache: 172.16.0.5 GET /login 200
+Mar 29 10:05:01 server sshd[1050]: Failed password for root from 192.168.1.50 port 460 ssh2
+Mar 29 10:05:05 server sshd[1051]: Failed password for root from 192.168.1.50 port 461 ssh2
+Mar 29 10:06:30 server sshd[1060]: Failed password for user from 8.8.8.8 port 470 ssh2
+Mar 29 10:07:55 server sshd[1070]: Accepted password for admin from 10.0.0.8 port 480 ssh2
+Mar 29 10:08:10 server sudo: admin : TTY=pts/1 ; COMMAND=/bin/cat /etc/shadow
+Mar 29 10:09:33 webserver apache: 45.33.32.1 GET /backup.zip 404
+Mar 29 10:10:40 server sshd[1080]: Failed password for root from 192.168.1.50 port 500 ssh2
