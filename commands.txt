@@ -1,0 +1,33 @@
+----see log----
+ cat log.txt
+
+---DETECT BRUTE FORCE ATTACK---
+  grep -i "FAILED PASSWORD" log.txt    
+      #shows failed passwords login 
+  
+  grep -i "FAILED PASSWORD" log.txt | wc -l  
+      #shows how many times password failed
+
+ --- FINDING THE ATTACKER IP---
+  grep -i "FAILED PASSWORD" log.txt | awk '{print $11}'
+     #shows USERS IP ADRRESS who tried to login using wrong passwords
+  
+  grep -i "FAILED PASSWORD" log.txt | awk '{print $11}' | sort | uniq -c | sort -nr
+     #shows USERS IP ADDRESS and how many times they tried to login 
+
+ ---DETECT SUCCESSFUL LOGIN---
+  grep -i "ACCEPTED PASSWORD" log.txt 
+    #gives succesfull logged USERS information
+
+---DETECT ADMIN PRIVILEGE USAGE---
+  grep -i "sudo" log.txt
+  #Show sudo (ADMIN) activity
+
+---DETECT WEB ATTACKS---
+  grep -i "/admin" log.txt
+  #shows if USER tried to acces ADMIN or ADMIN PANEL
+  
+  grep -i "backup" log.txt
+  #shows if USER tried to access backup file or zip file
+  
+  
