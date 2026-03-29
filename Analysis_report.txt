@@ -1,0 +1,31 @@
+===== LOG ANALYSIS REPORT =====
+
+1. Brute Force Attack
+Source IP: 192.168.1.50
+Description: Multiple failed SSH login attempts detected (6 attempts).
+Risk Level: Medium–High
+
+2. Successful Logins
+User: chetan
+Source IP: 10.0.0.2
+
+User: admin
+Source IP: 10.0.0.8
+
+3. Privileged Activity
+User: chetan
+Command: /bin/apt update
+Risk Level: Low (Normal system update)
+
+User: admin
+Command: /bin/cat /etc/shadow
+Risk Level: CRITICAL
+Reason: Access to password hash database detected.
+
+4. Web Attack Attempt
+Source IP: 172.16.0.5
+Action: Attempted access to restricted /admin page (403 response).
+
+5. Additional Suspicious Activity
+Source IP: 45.33.32.1
+Action: Attempted access to backup.zip file (possible reconnaissance).
