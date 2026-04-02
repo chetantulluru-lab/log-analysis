@@ -1,4 +1,4 @@
-===== LOG ANALYSIS REPORT =====
+=====⚙️LOG ANALYSIS REPORT =====
 
 1. Brute Force Attack
 Source IP: 192.168.1.50
